@@ -147,4 +147,6 @@ alias pmode_curr="cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
 
 #sudo apt-get install ppa-purge
 #$ sudo ppa-purge ppa:oibaf/graphics-drivers
+#Temperature sensors https://itsfoss.com/check-laptop-cpu-temperature-ubuntu/
+#tlp
 
