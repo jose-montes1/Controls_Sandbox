@@ -131,7 +131,9 @@ GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/jmonpe/catkin_ws/devel/lib
 #Select each cpu based on power consumption
 #https://www.linuxbabe.com/desktop-linux/switch-intel-nvidia-graphics-card-ubuntu
 alias igpu="sudo prime-select intel"
+#sudo tee /proc/acpi/bbswitch <<<OFF
 alias ngpu="sudo prime-select nvidia"
+#sudo tee /proc/acpi/bbswitch <<<ON
 alias wgpu="prime-select query"
 
 #Powersaver options
@@ -140,3 +142,9 @@ alias wgpu="prime-select query"
 alias pmode_save="sudo cpupower frequency-set -g powersave"
 alias pmode_perf="sudo cpupower frequency-set -g performance"
 alias pmode_curr="cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+
+
+
+#sudo apt-get install ppa-purge
+#$ sudo ppa-purge ppa:oibaf/graphics-drivers
+
